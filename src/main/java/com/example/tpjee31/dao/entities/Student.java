@@ -1,13 +1,16 @@
 package com.example.tpjee31.dao.entities;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
+
 import java.util.Collection;
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class Student extends Personne {
     @Id
