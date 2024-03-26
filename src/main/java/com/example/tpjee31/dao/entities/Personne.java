@@ -10,10 +10,10 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
-public class Personne {
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+abstract class Personne {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private long id;
     @Column(name = "nom")
     private String name;

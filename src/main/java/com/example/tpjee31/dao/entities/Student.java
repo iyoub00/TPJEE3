@@ -9,11 +9,11 @@ import org.springframework.boot.autoconfigure.web.WebProperties;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Student extends Personne{
+public class Student extends Personne {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String matricule;
     @ManyToMany
-    private Collection<Session>sessions=new ArrayList<>();
+    private Collection<Session> sessions;
 
 }

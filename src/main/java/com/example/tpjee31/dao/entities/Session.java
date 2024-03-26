@@ -25,7 +25,8 @@ public class Session {
     private Date h_fin;
     @ManyToOne
     private Course course;
-    @ManyToMany(mappedBy = "sessions",fetch = FetchType.EAGER)
-    private Collection<Student>students=new ArrayList<>();
+    @ManyToMany(mappedBy = "sessions")
+    private Collection<Personne> students;
+
 
 }

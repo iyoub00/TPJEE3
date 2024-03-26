@@ -21,7 +21,7 @@ public class Course {
     private String description;
     @OneToOne(mappedBy = "course")
     private Professor professor;
-    @OneToMany(mappedBy = "Course",fetch = FetchType.EAGER)
-    private Collection<Session>sessions;
+    @OneToMany(mappedBy = "Course" )
+    private Collection<Session> sessions;
 
 }
