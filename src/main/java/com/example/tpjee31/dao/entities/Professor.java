@@ -17,4 +17,12 @@ public class Professor extends Personne{
     private Date Date_affectation;
     @OneToOne
     private Course course;
+
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "Date_affectation=" + Date_affectation +
+                ", course=" + course +
+                "} " + super.toString();
+    }
 }

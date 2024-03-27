@@ -24,4 +24,13 @@ public class Course {
     @OneToMany(mappedBy = "Course" )
     private Collection<Session> sessions;
 
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id=" + id +
+                ", Title='" + Title + '\'' +
+                ", description='" + description + '\'' +
+                ", professor=" + professor +
+                '}';
+    }
 }

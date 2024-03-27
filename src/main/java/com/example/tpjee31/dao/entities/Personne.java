@@ -11,7 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-abstract class Personne {
+public abstract class Personne {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
     private long id;

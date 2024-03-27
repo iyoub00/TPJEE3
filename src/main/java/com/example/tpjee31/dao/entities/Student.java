@@ -19,4 +19,11 @@ public class Student extends Personne {
     @ManyToMany
     private Collection<Session> sessions;
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "matricule='" + matricule + '\'' +
+                ", sessions=" + sessions +
+                "} " + super.toString();
+    }
 }

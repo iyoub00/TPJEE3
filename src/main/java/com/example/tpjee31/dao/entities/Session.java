@@ -28,5 +28,14 @@ public class Session {
     @ManyToMany(mappedBy = "sessions")
     private Collection<Personne> students;
 
-
+    @Override
+    public String toString() {
+        return "Session{" +
+                "id=" + id +
+                ", date=" + date +
+                ", h_debut=" + h_debut +
+                ", h_fin=" + h_fin +
+                ", students=" + students +
+                '}';
+    }
 }
